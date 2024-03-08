@@ -1,0 +1,12 @@
+[package]
+name = "cargo-brr"
+version = "0.1.0"
+edition = "2021"
+authors = ["konsti219"]
+license = "MIT"
+description = "A joke Rust compiler stress test"
+repository = "https://github.com/konsti219/cargo-brr"
+
+[dependencies]
+ctrlc = "3.4.2"
+tempfile = "3.10.0"

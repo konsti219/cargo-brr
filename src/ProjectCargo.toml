@@ -1,0 +1,110 @@
+[package]
+name = "cargo_brrrrrrrr"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "main"
+path = "main.rs"
+
+[dependencies]
+axum = { version = "0.7.4", features = ["ws", "http2", "macros", "multipart"] }
+bat = { version = "0.24.0", features = ["lessopen", "regex-fancy"] }
+bevy = { version = "0.13.0", default-features = false, features = [
+    "animation",
+    "async-io",
+    "bevy_animation",
+    "bevy_asset",
+    "bevy_core_pipeline",
+    "bevy_debug_stepping",
+    "bevy_gizmos",
+    "bevy_gltf",
+    "bevy_pbr",
+    "bevy_render",
+    "bevy_scene",
+    "bevy_sprite",
+    "bevy_text",
+    "bevy_ui",
+    "bevy_winit",
+    "default_font",
+    "hdr",
+    "ktx2",
+    "multi-threaded",
+    "png",
+    "tonemapping_luts",
+    "webgl2",
+    "x11",
+    "zstd",
+    "asset_processor",
+    "basis-universal",
+    "bevy_ci_testing",
+    "bevy_dynamic_plugin",
+    "bmp",
+    "dds",
+    "debug_glam_assert",
+    "detailed_trace",
+    "dynamic_linking",
+    "embedded_watcher",
+    "exr",
+    "file_watcher",
+    "glam_assert",
+    "jpeg",
+    "pbr_transmission_textures",
+    "pnm",
+    "serialize",
+    "shader_format_glsl",
+    "shader_format_spirv",
+    "subpixel_glyph_atlas",
+    "tga",
+    "trace",
+    "trace_chrome",
+    "trace_tracy",
+    "trace_tracy_memory",
+    "wayland",
+    "webgpu",
+    "webp",
+    "wgpu_trace",
+    "zlib",
+] }
+clap = { version = "4.5.1", features = [
+    "cargo",
+    "debug",
+    "derive",
+    "env",
+    "string",
+    "unicode",
+    "wrap_help",
+] }
+leptos = { version = "0.6.6", features = [
+    "ssr",
+    "nonce",
+    "csr",
+    "hydrate",
+    "spin",
+    "rkyv",
+    "template_macro",
+    "tracing",
+] }
+sqlx = { version = "0.7.3", features = [
+    "all-databases",
+    "runtime-async-std",
+    "runtime-tokio",
+    "tls-rustls",
+    "bigdecimal",
+    "bit-vec",
+    "chrono",
+    "ipnetwork",
+    "mac_address",
+    "rust_decimal",
+    "time",
+    "uuid",
+    "regexp",
+] }
+tokio = { version = "1.36.0", features = ["full", "mio", "tracing"] }
+unreal_asset = { version = "0.1.16", features = ["oodle"] }
+winit = { version = "0.29.10", features = [
+    "mint",
+    "serde",
+    "rwh_05",
+    "rwh_04",
+] }
